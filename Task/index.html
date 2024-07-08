@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wanderlust Adventures</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .scroll-smooth {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 scroll-smooth">
+  <!-- Header -->
+  <header class="bg-blue-600 text-white p-4 flex justify-between items-center">
+    <h1 class="text-3xl font-bold">Wanderlust Adventures</h1>
+    <div>
+      <button onclick="scrollToSection('services')" class="bg-blue-500 px-4 py-2 rounded hover:bg-blue-700 mx-2">Our Services</button>
+      <button onclick="scrollToSection('testimonials')" class="bg-blue-500 px-4 py-2 rounded hover:bg-blue-700">What Our Clients Say</button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-cover bg-center h-screen" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYeslxj9UERzSzX4Dac0wEFSXFrnHWm6oJNQ&s'); object-fit: cover;">
+    <div class="bg-black bg-opacity-50 h-full flex items-center justify-center">
+      <div class="text-center text-white">
+        <h2 class="text-4xl font-bold">Explore the World with Us</h2>
+        <p class="mt-4 text-lg">Discover new places and experience new adventures</p>
+        <button class="mt-6 bg-blue-500 px-4 py-2 rounded hover:bg-blue-700">Get Started</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="services" class="p-8">
+    <h2 class="text-3xl font-bold text-center">Our Services</h2>
+    <div class="flex flex-col md:flex-row justify-around mt-8 space-y-4 md:space-y-0 md:space-x-4">
+      <div class="bg-white p-6 rounded-lg shadow-lg flex-1">
+        <h3 class="text-xl font-bold">Personalized Tours</h3>
+        <p class="mt-2">Custom tours tailored to your interests, whether it's historical sites, culinary experiences, or adventure activities. We plan everything for you, ensuring a memorable trip.</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-lg flex-1">
+        <h3 class="text-xl font-bold">Group Travel</h3>
+        <p class="mt-2">Join group tours and make new friends along the way. Perfect for solo travelers or those looking to share experiences with like-minded individuals. We offer a variety of group packages.</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-lg flex-1">
+        <h3 class="text-xl font-bold">Adventure Trips</h3>
+        <p class="mt-2">Thrilling adventures for the adrenaline junkies. From mountain climbing to white-water rafting, our adventure trips are designed to challenge and excite.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="bg-gray-200 p-8">
+    <h2 class="text-3xl font-bold text-center">What Our Clients Say</h2>
+    <div class="flex flex-col md:flex-row justify-around mt-8 space-y-4 md:space-y-0 md:space-x-4">
+      <div class="bg-white p-6 rounded-lg shadow-lg flex-1">
+        <p class="italic">"An unforgettable experience! Highly recommend."</p>
+        <p class="mt-4 text-right">- John Doe</p>
+        <p class="mt-2 text-sm text-gray-600">John traveled to Europe with our personalized tour package and was thrilled with the customized itinerary that included historical landmarks and gourmet dining experiences.</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-lg flex-1">
+        <p class="italic">"Amazing service and wonderful destinations."</p>
+        <p class="mt-4 text-right">- Jane Smith</p>
+        <p class="mt-2 text-sm text-gray-600">Jane joined one of our group travel packages to Southeast Asia. She enjoyed the camaraderie and the well-organized itinerary that included cultural immersion and local adventures.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-blue-600 text-white p-4 text-center">
+    <p>&copy; 2024 Wanderlust Adventures. All rights reserved.</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    function scrollToSection(id) {
+      document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
